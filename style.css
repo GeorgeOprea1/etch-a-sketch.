@@ -16,7 +16,9 @@ body {
   justify-content: flex-end;
   gap: 2em;
 }
-
+#form {
+  margin-bottom: 1em;
+}
 .header {
   width: 100%;
   text-align: center;
@@ -63,4 +65,8 @@ input {
   padding: 0.1em;
   border: 1px solid #ddd;
   text-align: center;
+}
+
+.grid-orange {
+  background-color: orange;
 }
