@@ -11,14 +11,24 @@
       <div class="header">
         <h1 class="title">Etch-a-Sketch</h1>
         <div id="form">
-          <label for="input"><strong>New grid size:</strong> </label>
-          <input type="text" id="input" name="input" />
+          <label for="input"><strong>Select grid size:</strong> </label>
+          <div id="slider">
+            <input
+              type="range"
+              min="1"
+              max="75"
+              value="12"
+              id="input"
+              name="input" />
+            <span id="grid-value">12</span>
+          </div>
           <button id="newGrid">New Grid</button>
         </div>
         <div id="buttons">
           <button id="black-btn">Black</button>
           <button id="red-btn">Red</button>
           <button id="blue-btn">Blue</button>
+          <button id="yellow-btn">Yellow</button>
           <button id="random-btn">Random</button>
           <button id="eraser-btn">Eraser</button>
           <button id="clear-btn">Clear</button>

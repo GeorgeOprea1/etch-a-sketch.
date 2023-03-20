@@ -6,6 +6,9 @@ const randomBtn = document.getElementById("random-btn");
 const eraseBtn = document.getElementById("eraser-btn");
 const clearBtn = document.getElementById("clear-btn");
 const newGridBtn = document.getElementById("newGrid");
+const yellowBtn = document.getElementById("yellow-btn");
+const input = document.getElementById("input");
+const gridValue = document.getElementById("grid-value");
 let num;
 let gridcolor = true;
 let color;
@@ -24,21 +27,29 @@ function makeGrid(num) {
       if (gridcolor) {
         cell.style.backgroundColor = color;
       } else {
-        cell.style.backgroundColor = "#585858";
+        cell.style.backgroundColor = "#f2f1ef";
       }
     });
   }
 }
 
 blackBtn.addEventListener("click", function () {
-  color = "black";
+  color = "#000";
+  gridcolor = true;
 });
 
 redBtn.addEventListener("click", function () {
-  color = "red";
+  color = "#ef0107";
+  gridcolor = true;
 });
 blueBtn.addEventListener("click", function () {
-  color = "blue";
+  color = "#065dd8";
+  gridcolor = true;
+});
+
+yellowBtn.addEventListener("click", function () {
+  color = "#ffdd00";
+  gridcolor = true;
 });
 
 /*button that generates a random color */
@@ -46,6 +57,7 @@ blueBtn.addEventListener("click", function () {
 randomBtn.addEventListener("click", function () {
   let randomColor = Math.floor(Math.random() * 16777215).toString(16);
   color = "#" + randomColor;
+  gridcolor = true;
 });
 
 eraseBtn.addEventListener("click", function () {
@@ -60,7 +72,7 @@ clearBtn.addEventListener("click", function () {
 /* Resets all grid elements to default background  */
 function resetGridColor() {
   let divs = document.querySelectorAll("div");
-  divs.forEach((div) => (div.style.backgroundColor = "#585858"));
+  divs.forEach((div) => (div.style.backgroundColor = "#f2f1ef"));
 }
 
 newGridBtn.addEventListener("click", function () {
@@ -71,4 +83,9 @@ newGridBtn.addEventListener("click", function () {
   /*creates a new grid based on the number given by the user */
   let num = document.querySelector("input").value;
   makeGrid(num);
+});
+
+/* select grid size */
+input.addEventListener("mousemove", function getGridValue(value) {
+  gridValue.innerHTML = input.value;
 });
