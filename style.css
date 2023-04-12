@@ -10,11 +10,12 @@ body {
 #flex-container {
   display: flex;
   flex-direction: column;
-  width: 1000;
-  height: 90%;
+  width: 90vw;
+  height: 90vh;
   align-items: center;
   justify-content: flex-end;
   gap: 2em;
+  position: relative;
 }
 #form {
   margin-bottom: 1em;
@@ -49,6 +50,7 @@ button {
   border-radius: 10rem;
   color: #fff;
   font-weight: 600;
+  cursor: pointer;
 }
 
 #black-btn {
@@ -119,10 +121,33 @@ button {
   outline: none;
   border-radius: 3px;
   overflow: hidden;
+  cursor: pointer;
 }
 #grid-value {
   width: 10%;
 
   border-radius: 10rem;
   color: #000;
+}
+
+.footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+  position: absolute;
+  bottom: 0;
+  height: 5wh;
+  font-size: 1.5rem;
+}
+
+#icon {
+  width: 1.5em;
+  cursor: pointer;
+}
+
+#icon:hover {
+  transform: rotate(360deg) scale(1.2);
+  transition: transform 0.3s ease-in-out;
 }
