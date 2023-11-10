@@ -35,8 +35,8 @@ body {
 }
 
 #sketch-container {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   border: 10px solid #282828;
   border-radius: 3ex;
   margin-bottom: 3em;
@@ -46,11 +46,13 @@ body {
 }
 
 button {
-  width: 10%;
+  width: 12%;
+  height: calc(1rem + 0.7vh);
   border-radius: 10rem;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  font-size: calc(0.3rem + 0.4vw);
 }
 
 #black-btn {
@@ -109,7 +111,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 40%;
   outline: none;
   border-radius: 10rem;
   border: 2px solid #000;
@@ -124,8 +126,8 @@ button {
   cursor: pointer;
 }
 #grid-value {
-  width: 10%;
-
+  width: 15%;
+  font-size: calc(0.5rem + 0.4vw);
   border-radius: 10rem;
   color: #000;
 }
@@ -139,7 +141,7 @@ button {
   position: absolute;
   bottom: 0;
   height: 5wh;
-  font-size: 1.5rem;
+  font-size: calc(1rem + 0.5vw);
 }
 
 #icon {
