@@ -39,11 +39,11 @@ blackBtn.addEventListener("click", function () {
 });
 
 redBtn.addEventListener("click", function () {
-  color = "#ef0107";
+  color = "#fe1b22";
   gridcolor = true;
 });
 blueBtn.addEventListener("click", function () {
-  color = "#065dd8";
+  color = "#034db5";
   gridcolor = true;
 });
 

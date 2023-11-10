@@ -60,19 +60,22 @@ button {
 }
 
 #red-btn {
-  background-color: #ef0107;
+  background-color: #fe1b22;
+  color: #000;
 }
 
 #blue-btn {
-  background-color: #065dd8;
+  background-color: #034db5;
 }
 
 #yellow-btn {
   background-color: #ffdd00;
+  color: #000;
 }
 
 #eraser-btn {
   background-color: #f5a19d;
+  color: #000;
 }
 #clear-btn {
   background-image: linear-gradient(to bottom, #fff, #f8eedb);
@@ -85,7 +88,7 @@ button {
 }
 
 #random-btn {
-  background-color: #cf245f;
+  background-color: #bc2056;
   background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
 }
 
