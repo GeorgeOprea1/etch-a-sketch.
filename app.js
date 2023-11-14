@@ -12,10 +12,17 @@ const gridValue = document.getElementById("grid-value");
 let num;
 let gridcolor = true;
 let color;
+let mouseDown = false;
+document.body.addEventListener("mousedown", function () {
+  mouseDown = true;
+});
+document.body.addEventListener("mouseup", function () {
+  mouseDown = false;
+});
 
 makeGrid(12); /* default grid value*/
 
-/*this function creates the grid */
+/*this function creates the grid and change the color of cells*/
 
 function makeGrid(num) {
   container.style.setProperty("--grid-rows", num);
@@ -23,13 +30,16 @@ function makeGrid(num) {
   for (i = 0; i < num * num; i++) {
     let cell = document.createElement("div");
     container.appendChild(cell).className = "grid-item";
-    cell.addEventListener("mouseover", function () {
+    cell.addEventListener("mouseover", changeColor);
+    cell.addEventListener("mousedown", changeColor);
+    function changeColor(e) {
+      if (e.type === "mouseover" && !mouseDown) return;
       if (gridcolor) {
         cell.style.backgroundColor = color;
       } else {
         cell.style.backgroundColor = "#f2f1ef";
       }
-    });
+    }
   }
 }
 
