@@ -1,6 +1,6 @@
 # [Etch-a-sketch](https://georgeoprea1.github.io/etch-a-sketch./)
 
-![Etch-a-sketch interface image](./icons/sketchPhoto.webp)
+![Etch-a-sketch interface image](./icons/sketchPhoto.jpg)
 
 Created as part of The Odin Project curriculum.
 
