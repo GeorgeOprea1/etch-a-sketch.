@@ -2,11 +2,14 @@
 
 ![Etch-a-sketch interface image](./icons/sketchPhoto.webp)
 
+Created as part of The Odin Project curriculum.
+
 ## Features
 
-- Create a grid size up to 60 x 60.
 - Create your own pixel art.
-- Random button always selects a different color
+- Create a grid size up to 60 x 60.
+- Choose any color from the input, press the pick button and start drawing.
+- Random button always selects a different color.
 - Responsive design.
 
 ## Technologies

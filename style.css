@@ -156,3 +156,21 @@ button {
   transform: rotate(360deg) scale(1.2);
   transition: transform 0.3s ease-in-out;
 }
+
+.select {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pick-btn {
+  width: 12%;
+  background-color: dimgray;
+  color: #000;
+}
+
+#input-color {
+  width: 12%;
+}

@@ -9,9 +9,12 @@ const newGridBtn = document.getElementById("newGrid");
 const yellowBtn = document.getElementById("yellow-btn");
 const input = document.getElementById("input");
 const gridValue = document.getElementById("grid-value");
+const pickBtn = document.querySelector(".pick-btn");
+const inputColor = document.getElementById("input-color");
 let num;
 let gridcolor = true;
 let color;
+let pickColor;
 let mouseDown = false;
 document.body.addEventListener("mousedown", function () {
   mouseDown = true;
@@ -98,4 +101,15 @@ newGridBtn.addEventListener("click", function () {
 /* select grid size */
 input.addEventListener("mousemove", function getGridValue(value) {
   gridValue.innerHTML = input.value;
+});
+
+/* pick the color from the color input */
+inputColor.addEventListener("input", function () {
+  pickColor = inputColor.value;
+});
+
+pickBtn.addEventListener("click", function () {
+  color = pickColor;
+  gridcolor = true;
+  pickBtn.style.backgroundColor = pickColor;
 });
